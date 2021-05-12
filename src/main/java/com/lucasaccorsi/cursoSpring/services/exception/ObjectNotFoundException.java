@@ -1,6 +1,6 @@
 package com.lucasaccorsi.cursoSpring.services.exception;
 
-public class ObjectNotFoundException extends RuntimeException{
+public class ObjectNotFoundException extends RuntimeException {
 	private static final long serialVersionUID = 1L;
 	
 	public ObjectNotFoundException(String msg) {

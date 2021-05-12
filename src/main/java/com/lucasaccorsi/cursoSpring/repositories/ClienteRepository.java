@@ -6,6 +6,4 @@ import org.springframework.stereotype.Repository;
 import com.lucasaccorsi.cursoSpring.domain.Cliente;
 
 @Repository
-public interface ClienteRepository extends JpaRepository<Cliente, Integer>{
-	
-}
+public interface ClienteRepository extends JpaRepository<Cliente, Integer> {}
