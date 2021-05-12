@@ -1,7 +1,6 @@
 package com.lucasaccorsi.cursoSpring.domain;
 
 import java.io.Serializable;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
@@ -38,7 +37,6 @@ public abstract class Pagamento implements Serializable {
 	public Integer getId() {
 		return id;
 	}
-
 	public void setId(Integer id) {
 		this.id = id;
 	}
@@ -46,7 +44,6 @@ public abstract class Pagamento implements Serializable {
 	public EstadoPagamento getEstado() {
 		return EstadoPagamento.toEnum(estado);
 	}
-
 	public void setEstado(EstadoPagamento estado) {
 		this.estado = estado.getCod();
 	}
@@ -54,7 +51,6 @@ public abstract class Pagamento implements Serializable {
 	public Pedido getPedido() {
 		return pedido;
 	}
-
 	public void setPedido(Pedido pedido) {
 		this.pedido = pedido;
 	}

@@ -1,7 +1,6 @@
 package com.lucasaccorsi.cursoSpring.domain;
 
 import java.io.Serializable;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -37,7 +36,6 @@ public class Cidade implements Serializable {
 	public Integer getId() {
 		return id;
 	}
-
 	public void setId(Integer id) {
 		this.id = id;
 	}
@@ -45,7 +43,6 @@ public class Cidade implements Serializable {
 	public String getNome() {
 		return nome;
 	}
-
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
@@ -53,7 +50,6 @@ public class Cidade implements Serializable {
 	public Estado getEstado() {
 		return estado;
 	}
-
 	public void setEstado(Estado estado) {
 		this.estado = estado;
 	}
@@ -82,6 +78,4 @@ public class Cidade implements Serializable {
 			return false;
 		return true;
 	}
-	
-	
 }

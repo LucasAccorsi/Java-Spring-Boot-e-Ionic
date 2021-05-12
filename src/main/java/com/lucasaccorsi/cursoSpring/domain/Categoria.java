@@ -3,7 +3,6 @@ package com.lucasaccorsi.cursoSpring.domain;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -40,18 +39,13 @@ public class Categoria implements Serializable {
 	public Integer getId() {
 		return id;
 	}
-
-
 	public void setId(Integer id) {
 		this.id = id;
 	}
 
-
 	public String getNome() {
 		return nome;
 	}
-
-
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
@@ -59,8 +53,6 @@ public class Categoria implements Serializable {
 	public List<Produto> getProdutos() {
 		return produtos;
 	}
-
-
 	public void setProdutos(List<Produto> produtos) {
 		this.produtos = produtos;
 	}
@@ -72,7 +64,6 @@ public class Categoria implements Serializable {
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		return result;
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -89,6 +80,5 @@ public class Categoria implements Serializable {
 		} else if (!id.equals(other.id))
 			return false;
 		return true;
-	}
-	
+	}	
 }

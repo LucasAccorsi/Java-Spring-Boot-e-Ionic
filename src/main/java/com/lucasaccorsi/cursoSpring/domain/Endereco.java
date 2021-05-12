@@ -1,7 +1,6 @@
 package com.lucasaccorsi.cursoSpring.domain;
 
 import java.io.Serializable;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -128,6 +127,4 @@ public class Endereco implements Serializable {
 			return false;
 		return true;
 	}
-	
-	
 }
