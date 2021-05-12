@@ -3,12 +3,14 @@ package com.lucasaccorsi.cursoSpring.domain;
 import java.util.Date;
 import javax.persistence.Entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.lucasaccorsi.cursoSpring.domain.enums.EstadoPagamento;
 
 @Entity
 public class PagamentoBoleto extends Pagamento {
 	private static final long serialVersionUID = 1L;
 	
+	@JsonFormat(pattern="dd/MM/yyyy")
 	private Date dataPagamento;
 	private Date dataVencimento;
 	
